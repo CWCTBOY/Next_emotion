@@ -38,5 +38,5 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-`;
+`;//resetStyle work well
 export default reset;
