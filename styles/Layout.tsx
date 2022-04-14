@@ -1,28 +1,35 @@
-import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
-
-export const Border = styled('div')`//similar but different with styledComponent in TS
+export const Wrapper = styled('div')`
   width: 100vw;
-  height: 100vh;
-  border: 10px solid blue;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.95);
+	color: whitesmoke;
   display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const Circle = styled('div')`
-  width: 350px;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+`
+export const NavWrapper = styled('nav')`
+  width: 100%;
+  height: 70px;
   background-color: black;
-  border-radius: 50%;
-  transition: background-color 1s ease;
-  &:hover {
-    background-color: rgba(0,0,0,0.3);
+  background: linear-gradient(to right, red, purple);
+  padding: 0 0 3px 0;
+  position: relative;
+`
+export const NavContent = styled('div')`
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+`
+export const Anchor = styled('a')`
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  &:first-of-type {
+    color: red;
+    font-size: 28px;
   }
-`;
-export const Text = styled('h1')`
-  font-size: 30px;
-  color: black;
-`;
+`

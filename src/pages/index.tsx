@@ -1,10 +1,11 @@
-import { Border, Circle, Text } from "../../styles/Layout"
-export default function Home() {
+import Seo from "../components/default/Seo";
+
+function Home() {
   return (
-    <Border>
-      <Circle>
-        <Text as='h2'>Hello</Text>
-      </Circle>
-    </Border>
+    <>
+      <Seo title='Home' />
+      <h1>HomePage</h1>
+    </>
   )
 }
+export default Home;
