@@ -26,10 +26,14 @@ export const NavContent = styled('div')`
 export const Anchor = styled('a')`
   width: auto;
   height: auto;
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
   &:first-of-type {
     color: red;
-    font-size: 28px;
+    font-size: 25px;
+    font-weight: 600;
   }
+`
+export const Netflix = styled('img')`
+  width: 110px;
 `

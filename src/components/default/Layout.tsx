@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Anchor, NavContent, NavWrapper, Wrapper } from "../../../styles/Layout";
+import { Anchor, NavContent, NavWrapper, Netflix, Wrapper } from "../../../styles/Layout";
 
 function Layout({ children }: React.PropsWithChildren<{}>) {
   return (
@@ -8,7 +8,7 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
       <NavWrapper>
         <NavContent>
           <Link href={'/'}>
-            <Anchor>NETFLEX</Anchor>
+            <Anchor><Netflix src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" /></Anchor>
           </Link>
           <Link href={'/about'}>
             <Anchor>ABOUT</Anchor>

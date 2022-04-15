@@ -40,5 +40,5 @@ a {
 	text-decoration: none;
 	color: whitesmoke;
 }
-`;//resetStyle work well
+`;
 export default globalStyle;
