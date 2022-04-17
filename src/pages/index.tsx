@@ -1,9 +1,8 @@
-import { request } from "http";
 import { useEffect, useState } from "react";
 import Seo from "../components/default/Seo";
+import Card from "../components/Home/Card";
 
-const API_KEY = '26796b4505cf13e86b12a4746609c749';
-interface IMovieProps {
+export interface IMovieProps {
   adult: boolean;
   backdrop_path: string;
   genre_ids: number[];
@@ -16,6 +15,7 @@ interface IMovieProps {
   title: string;
   vote_average: number;
 }
+const API_KEY = '26796b4505cf13e86b12a4746609c749';
 function Home() {
   const [moviesinfo, setMoviesinfo] = useState<IMovieProps[]>();
   useEffect(() => {
@@ -27,7 +27,7 @@ function Home() {
   return (
     <>
       <Seo title='Home' />
-      <h1>HomePage</h1>
+      <Card moviesinfo={moviesinfo} />
     </>
   )
 }//data fetching only. from here next day
