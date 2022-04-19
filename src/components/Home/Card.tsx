@@ -1,19 +1,21 @@
-import { CardBox, Poster } from "../../../styles/Home";
+import React, { useState } from "react";
+import { CardBox, Poster, Popular, PopulatTxt } from "../../../styles/Home";
 import { IMovieProps } from "../../pages";
 
-interface IMovieType {
-  moviesinfo?: IMovieProps[];
-}
-
-function Card({ moviesinfo }: IMovieType) {
-  console.log(moviesinfo)
+function Card({ results }: IMovieProps) {
   return (
-    <CardBox>
-      {
-        moviesinfo?.map((item, index) => <Poster key={index}>sex</Poster>)
-      }
-    </CardBox>
-  )
+    <>
+      <Popular>
+        <PopulatTxt>Popular Movies</PopulatTxt>
+      </Popular>
+      <CardBox>
+        {
+          results?.map((item, index) =>
+            <Poster key={index} src={`https://image.tmdb.org/t/p/w500/${item?.poster_path}`} />
+          )
+        }
+      </CardBox>
+    </>)
 }
-export default Card;
+export default Card; // useRoute 사용 또는 Link path props url masking and dynamic routing 사용해보기
 // https://image.tmdb.org/t/p/w500/포스터 주소

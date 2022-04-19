@@ -12,6 +12,7 @@ export const NavWrapper = styled('nav')`
   height: 70px;
   background-color: black;
   background: linear-gradient(to right, red, purple);
+  margin-bottom: 40px;
   padding: 0 0 3px 0;
   position: relative;
 `
